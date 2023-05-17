@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KJSCE</title>
+        <link rel="icon" href="images/1.png" type="image/png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/1.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="viewcourses.php">VIEW_STUDENTS</a></li>
+                        <li class="dropdown">
+            		<a href="#" class="account-link">Account</a>
+            		<div class="dropdown-content">
+                	<p>Welcome!</p>
+                	<a href="logout.php">Logout</a>
+            		</div>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>K J SOMAIYA COLLEGE OF ENGINEERING</h1>
+                <p>
+                    KJSCE is one of the best engineering college in Mumbai, Maharashtra 
+                </p>
+                <a href="https://kjsce.somaiya.edu/en" class="hero-btn">Visit us to know more.</a>
+                <h3>Scroll for more info</h3>
+            </div>
+            <svg class="arrows">
+                <path stroke-linecap="round" class="a1" d="M0 0 L15 15 L30 0"></path>
+                <path stroke-linecap="round" class="a2" d="M0 10 L15 25 L30 10"></path>
+                <path stroke-linecap="round" class="a3" d="M0 20 L15 35 L30 20"></path>
+            </svg>
+        </section>
+
+
+
+
+<!-- ------- CAMPUS ------- -->
+
+<section class="campus">
+    <h1>Our Campus</h1>
+    
+    <div class="row">
+        <div class="campus-col">
+            <img src="images/2.jpg">
+            <div class="layer">
+                <h3>BUILDING</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/3.jpg">
+            <div class="layer">
+                <h3>Playzone</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/4.jpg">
+            <div class="layer">
+                <h3>Seminar</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- -------FACILITIES------- -->
+
+<section class="facilities">
+    <h1>Our facilities</h1>
+    
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/library.jpg" alt="">
+            <h3>World Class Library</h3>
+    
+        </div>
+        <div class="facilities-col">
+            <img src="images/5.jpg" alt="">
+            <h3>Well Equipped Labs</h3>
+            
+        </div>
+        
+    </div>
+</section>
+
+
+
+
+
+
+<!-- ------- Footer -------  -->
+
+<section class="footer">
+    <h4>About us</h4>
+    <p>
+        KJSCE is one of the best engineering college in Mumbai, Maharashtra 
+    </p>
+    <div class="icons">
+        <a class="plain-link" href=""><i class="fa fa-twitter"></i></a>
+        <a class="plain-link" href=""><i class="fa fa-facebook"></i></a>
+        <a class="plain-link" href=""><i class="fa fa-instagram"></i></a>
+        <a class="plain-link" href=""><i class="fa fa-youtube"></i></a>
+    </div>
+    
+</section>
+
+<!-- -------------JavaScript for toggle menu------------ -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="icon" href="images/1.png" type="image/png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header sub-header-image-4">
+            <nav>
+                <a href="index.html"><img src="images/1.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="course.html">COURSES</a></li>
+                        <li><a href="result.php">ALLOTTMENT RESULT</a></li>
+                        <li class="dropdown">
+            		<a href="#" class="account-link">Account</a>
+            		<div class="dropdown-content">
+                	<p>Welcome!</p>
+                	<a href="logout.php">Logout</a>
+            		</div>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Contact Us</h1>
+        </section>
+
+<!-- --------Contact us content-------- -->
+
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <h1>Our Contact Details</h1>
+            <div>
+                <a class="plain-link" href=""><i class="fa fa-home"></i></a>
+                <a class="plain-link" href="">
+                <span>
+                    <h5>K J SOMAIYA COLLEGE OF ENGINEERING </h5>
+                    <p>Vidyanagar, Vidya Vihar East, Vidyavihar, Mumbai, Maharashtra 400077</p>
+                </span>
+                </a>
+            </div>
+            <div>
+                <a class="plain-link" href=""><i class="fa fa-phone"></i></a>
+                <a class="plain-link" href="">
+                <span>
+                    <h5>(022)-6644-9191</h5>
+                    <p>Monday to Saturday, 10 am to 6 pm</p>
+                </span>
+                </a>
+            </div>
+            <div>
+                <a class="plain-link" href=""><i class="fa fa-envelope-o"></i></a>
+                <span>
+                    <a class="plain-link" href="">
+                    <h5>kjsce@gmail.com</h5>
+                    <p>Email us for any queries.</p>
+                    </a>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+
+<!-- ------- Footer -------  -->
+
+<section class="footer">
+    <h4>About us</h4>
+    <p>
+        KJSCE is one of the best engineering college in Mumbai, Maharashtra 
+    </p>
+    <div class="icons">
+        <a class="plain-link" href=""><i class="fa fa-twitter"></i></a>
+        <a class="plain-link" href=""><i class="fa fa-facebook"></i></a>
+        <a class="plain-link" href=""><i class="fa fa-instagram"></i></a>
+        <a class="plain-link" href=""><i class="fa fa-youtube"></i></a>
+    </div>
+</section>
+
+
+<!-- -------------JavaScript for form submission------------ -->
+<script src="main.js"></script>
+
+<!-- -------------JavaScript for toggle menu------------ -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+    </body>
+</html>
